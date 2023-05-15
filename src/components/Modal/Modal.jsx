@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import { createPortal } from 'react-dom';
 import propTypes from 'prop-types';
 
 import {
@@ -8,8 +7,6 @@ import {
   ModalPic,
   ModalDescr,
 } from './Modal.styled';
-
-const modalRoot = document.querySelector('#modal-root');
 
 export class Modal extends Component {
   componentDidMount() {
@@ -33,14 +30,16 @@ export class Modal extends Component {
   };
 
   render() {  
-    return createPortal(
-      <ModalOverlay onClick={this.onkBackdropClick}>
+    return (
+      <ModalOverlay 
+      onClick={this.onkBackdropClick}>
         <ModalWindow>
-          <ModalPic src={this.props.src} alt={this.props.alt} />
+          <ModalPic 
+          src={this.props.src} 
+          alt={this.props.alt} />
           <ModalDescr>{this.props.alt}</ModalDescr>
         </ModalWindow>
-      </ModalOverlay>,
-      modalRoot
+      </ModalOverlay>     
     );
   }
 }
