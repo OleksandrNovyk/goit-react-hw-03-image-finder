@@ -2,7 +2,7 @@ import axios from 'axios';
 import Notiflix from 'notiflix';
 
 export const notifySettings = {
-  width: '380px',
+  width: '300px',
   position: 'right-top',
   distance: '10px',
   opacity: 1,

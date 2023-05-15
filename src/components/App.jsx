@@ -70,23 +70,6 @@ export class App extends Component {
         picsLeft > 0
           ? this.setState({ showLoadMoreBtn: true })
           : this.setState({ showLoadMoreBtn: false });
-
-        // if (this.state.showLoadMoreBtn && this.state.page > 1 && picsLeft > 0) {
-        //   Notiflix.Notify.success(
-        //     `${picsLeft} more images to show`,
-        //     notifySettings
-        //   );
-        // }
-
-        // if (picsLeft > 0) {
-        //   this.setState({ showLoadMoreBtn: true });
-        // } else {
-        //   this.setState({ showLoadMoreBtn: false });
-        // Notiflix.Notify.info(
-        //   `This is the last page. No more images to show`,
-        //   notifySettings
-        // );
-        // }
       });
     } catch (error) {
       console.log(error);

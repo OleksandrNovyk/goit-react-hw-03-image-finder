@@ -32,7 +32,7 @@ export class Modal extends Component {
     }
   };
 
-  render() {
+  render() {  
     return createPortal(
       <ModalOverlay onClick={this.onkBackdropClick}>
         <ModalWindow>
