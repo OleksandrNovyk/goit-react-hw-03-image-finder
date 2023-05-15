@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ListItem = styled.li`
   width: calc((100% - 40px) / 3);
   border-radius: 16px;
-  border: 2px solid hsla(0, 0%, 50%, 0.4);
+  border: 2px solid blanchedalmond;
   overflow: hidden;
   transform: scale(1);
   transition-duration: 700ms;
